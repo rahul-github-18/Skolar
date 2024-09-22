@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Assignments</title>
+    
+    <style>
+        /* Assignment 12: Z-Index */
+.overlapping-elements {
+    position: relative;
+}
+
+.element1 {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    z-index: 1;
+}
+
+.element2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    z-index: 2;
+}
+
+.element3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    z-index: 3;
+}
+
+/* Assignment 13: Transitions */
+.transition-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.transition-button:hover {
+    background-color: #3e8e41;
+}
+
+/* Assignment 14: Animations */
+.animated-element {
+    width: 100px;
+    height: 100px;
+    background-color: #FF0000;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Assignment 15: Transforms */
+.transformed-element {
+    width: 100px;
+    height: 100px;
+    background-color: #FF0000;
+    transform: rotate(45deg) scale(1.5);
+}
+
+/* Assignment 16: Pseudo-Classes and Pseudo-Elements */
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+p::before {
+    content: "This is a paragraph ";
+}
+
+p::after {
+    content: ".";
+}
+    </style>
+</head>
+<body>
+
+    <div class="overlapping-elements">
+        <div class="element1">Element 1</div>
+        <div class="element2">Element 2</div>
+        <div class="element3">Element 3</div>
+    </div>
+
+    <div class="transition-demo">
+        <button class="transition-button">Hover me</button>
+    </div>
+
+    <div class="animation-demo">
+        <div class="animated-element"></div>
+    </div>
+
+    <div class="transform-demo">
+        <div class="transformed-element"></div>
+    </div>
+
+    <div class="pseudo-demo">
+        <a href="#">Hover me</a>
+        <p>This is a paragraph.</p>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
